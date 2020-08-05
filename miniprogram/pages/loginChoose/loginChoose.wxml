@@ -1,0 +1,8 @@
+<view>
+  <text class="title">南京工程学院在线请假系统</text>
+  <view class="allButton"> 
+    <button class="choose" bindtap="toStudent">学生登录</button>
+    <button class="choose" bindtap="headteacher">班主任登录</button>
+    <button class="choose" bindtap="counselor">辅导员登录</button>
+  </view>
+</view>

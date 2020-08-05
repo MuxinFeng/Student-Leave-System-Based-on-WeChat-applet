@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/loginChoose/loginChoose",
+    "pages/login/login",
+    "pages/headTeacherLogin/headTeacherLogin",
+    "pages/counselorLogin/counselorLogin",
+    "pages/leave/leave",
+    "pages/leaveList/leaveList",
+    "pages/leaveDetail/leaveDetail",
+    "pages/addStudent/addStudent",
+    "pages/addHeadTeacher/addHeadTeacher",
+    "pages/addCounselor/addCounselor",
+    "pages/headTeacherList/headTeacherList",
+    "pages/counselorList/counselorList",
+    "pages/headTeacherDetail/headTeacherDetail",
+    "pages/counselorDetail/counselorDetail",
+    "pages/changeSecret/changeSecret",
+    "pages/changeSecret1/changeSecret1",
+    "pages/changeSecret2/changeSecret2",
+    "pages/demo/demo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "在线请假系统",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "selectColor": "#D53E37",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/leave/leave",
+        "text": "请假",
+        "iconPath": "images/bar/leave.png",
+        "selectedIconPath": "images/bar/leave.png"
+      },
+      {
+        "pagePath": "pages/leaveList/leaveList",
+        "text": "个人中心",
+        "iconPath": "images/bar/information.png",
+        "selectedIconPath": "images/bar/information.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

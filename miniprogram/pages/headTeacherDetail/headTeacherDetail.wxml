@@ -1,0 +1,26 @@
+<view>
+  <text class="text">假条详情</text>
+  <form bindsubmit="onsubmitclass">
+    <van-cell-group>
+      <van-field value="{{classLeave.className}}" label="班级" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.studentId}}" label="学号" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.name}}" label="姓名" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.guardian}}" label="联系人" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.guardianPhone}}" label="联系人电话" disabled border="{{ false }}"/>
+      
+      <van-field value="{{classLeave.reason}}" label="请假事由" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.dorm}}" label="宿舍地址" disabled border="{{ false }}" style="display:  {{ classLeave.dorm == null ? 'none' :  'block' }}"/>
+      <van-field value="{{classLeave.leaveTime}}" label="离校时间" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.backTime}}" label="返校时间" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.destination}}" label="去向" disabled border="{{ false }}"/>
+      <view>
+        <picker disabled="{{classLeave.headTeacherAdvice=='待审核'?false:true}}" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <van-field value='{{array[index]}}' disabled="{{classLeave.headTeacherAdvice=='待审核'?false:true}}" name="headTeacherAdvice" label="班主任意见" placeholder="点击审核"/>
+        </picker>
+      </view>
+      <van-field value="{{classLeave.counselorAdvice}}" label="辅导员意见" disabled border="{{ false }}"/>
+    </van-cell-group>
+    <button class="button1" type="primary" plain="true" bindtap="call"disabled="{{classLeave.headTeacherAdvice=='待审核'?false:true}}"> 联系家长 </button>
+    <button class="button1" type="primary" plain="true" form-type="submit"disabled="{{classLeave.headTeacherAdvice=='待审核'?false:true}}"> 确认提交 </button>
+  </form>
+</view>

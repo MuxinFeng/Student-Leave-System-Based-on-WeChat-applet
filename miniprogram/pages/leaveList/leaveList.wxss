@@ -1,0 +1,19 @@
+/* pages/leaveList/leaveList.wxss */
+.page{
+  background-color: 	#FFFAFA;
+}
+.list{
+  display:flex;
+  flex-direction: column;
+  width:85%;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 35rpx;
+  margin-left: 50rpx;
+  padding: 10px 0px 10px 20px;
+  border-radius: 20px 20px 20px 20px;
+  border-bottom: 1rpx solid gainsboro;
+  border-top: 1rpx solid gainsboro;
+  background-color: white;
+  box-shadow: 8px 8px 2px #eeebeb;
+}

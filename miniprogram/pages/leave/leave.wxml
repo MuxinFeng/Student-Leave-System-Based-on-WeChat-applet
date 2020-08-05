@@ -1,0 +1,73 @@
+<!--pages/leave/leave.wxml-->
+<view class="content">
+  <view class='loginTitle'>
+    <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap='switchNav'>课堂假条</view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap='switchNav'>住宿假条</view>
+  </view>
+  <view class="hr"></view>
+  <swiper current='{{currentTab}}' style='height:{{winHeight}}px'>
+    <swiper-item>
+      <view class="pageSelect">
+        <form bindsubmit="onsubmitclass">
+          <van-field value="{{className}}" name="className" disabled label="班级"/>
+          <van-field value="{{username}}" name="studentId" disabled label="学号"/>
+          <van-field value="{{name}}" name="name" disabled label="姓名"/>
+          <van-field value="{{guardian}}"name="guardian" label="联系人"/>
+          <van-field value="{{guardianPhone}}"name="guardianPhone" label="联系人电话"/>
+          <van-field value="{{reason}}" name="reason" label="请假事由"/>
+          <view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange"  
+              bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+              <van-field value='{{leavetime}}' name="leaveTime" label="离校时间" placeholder="点击选择离校时间"/>
+            </picker>
+          </view>
+          <view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange2"  
+              bindcolumnchange="bindMultiPickerColumnChange2" value="{{multiIndex2}}" range="{{multiArray2}}">
+              <van-field value='{{backtime}}' name="backTime" label="返校时间" placeholder="点击选择返校校时间"/>
+            </picker>
+          </view>
+          <van-field value="{{destination}}" name="destination" label="去向" placeholder="xx省xx市xx县/区xxxx"/>
+          <van-field value="{{headTeacher}}"name="headTeacher" label="班主任"/>
+          <van-field value="{{counselor}}"name="counselor" label="辅导员"/>
+          <button class="button" type="primary" plain="true" form-type="submit"> {{buttonName}} </button>
+        </form>
+      </view>   
+    </swiper-item>
+      
+    <swiper-item>
+      <view class="pageSelect">
+        <form bindsubmit="onsubmitdorm">
+         <van-field value="{{className}}" name="className" disabled label="班级"/>
+          <van-field value="{{username}}" name="studentId" disabled label="学号"/>
+          <van-field value="{{name}}" name="name" disabled label="姓名"/>
+          <van-field value="{{guardian}}"name="guardian" label="联系人"/>
+          <van-field value="{{guardianPhone}}"name="guardianPhone" label="联系人电话"/>
+          <van-field value="{{reason}}" name="reason" label="请假事由"/>
+          <view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange3"  
+              bindcolumnchange="bindMultiPickerColumnChange3" value="{{multiIndex3}}" range="{{multiArray3}}">
+              <van-field value='{{dorm}}' name="dorm" label="宿舍地址" placeholder="点击选择宿舍地址"/>
+            </picker>
+          </view>
+          <view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange"  
+              bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+              <van-field value='{{leavetime}}' name="leaveTime" label="离校时间" placeholder="点击选择离校时间"/>
+            </picker>
+          </view>
+          <view>
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange2"  
+              bindcolumnchange="bindMultiPickerColumnChange2" value="{{multiIndex2}}" range="{{multiArray2}}">
+              <van-field value='{{backtime}}' name="backTime" label="返校时间" placeholder="点击选择返校校时间"/>
+            </picker>
+          </view>
+          <van-field value="{{destination}}" name="destination" label="去向" placeholder="xx省xx市xx县/区xxxx"/>
+           <van-field value="{{headTeacher}}"name="headTeacher" label="班主任"/>
+          <van-field value="{{counselor}}"name="counselor" label="辅导员"/>
+          <button class="button" type="primary" plain="true" form-type="submit"> 确认提交 </button>
+        </form>
+      </view>   
+    </swiper-item>
+  </swiper>
+</view>

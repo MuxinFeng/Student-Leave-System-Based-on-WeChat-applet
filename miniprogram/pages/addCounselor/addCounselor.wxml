@@ -1,0 +1,9 @@
+<view>
+  <form bindsubmit="studentSubmit">
+    <van-field value="{{username}}" name="username"  placeholder="请输入工号" label="账号"/>
+    <van-field value="{{pwd}}" name="pwd" label="密码"/>
+    <van-field value="{{name}}" name="name" label="姓名"/>
+    <van-field value="{{class}}" name="class" label="院系"/>
+    <button form-type="submit">确认提交</button>
+  </form>
+</view>

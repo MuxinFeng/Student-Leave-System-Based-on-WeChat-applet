@@ -1,0 +1,44 @@
+<view class="page">
+  <van-cell is-link title="修改密码" link-type="navigateTo" url="/pages/changeSecret2/changeSecret2"/>
+  <van-cell is-link title="退出登录" link-type="redirectTo" url="/pages/loginChoose/loginChoose"/>
+  <van-divider contentPosition="center">历史假条</van-divider>
+  <!-- <view wx:for="{{leaveArray}}" wx:key="_id">
+    <navigator url="../counselorDetail/counselorDetail?id={{item._id}}">
+    <view class="list">
+      <label style="font-size:35rpx">申请人：{{item.name}}</label>
+      <label style="font-size:25rpx">开始时间:{{item.leaveTime}}</label>
+      <label style="font-size:25rpx">结束时间:{{item.backTime}}</label>
+      <label>事由:{{item.reason}}</label>
+      <label>审核进度:{{item.counselorAdvice}}</label>
+    </view> 
+    </navigator>
+  </view> -->
+  <van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="待审批假条" name="1">
+    <view wx:for="{{leaveArray}}" wx:key="_id">
+      <navigator url="../counselorDetail/counselorDetail?id={{item._id}}">
+      <view class="list">
+        <label style="font-size:35rpx">申请人：{{item.name}}</label>
+        <label style="font-size:25rpx">开始时间:{{item.leaveTime}}</label>
+        <label style="font-size:25rpx">结束时间:{{item.backTime}}</label>
+        <label>事由:{{item.reason}}</label>
+        <!-- <label>审核进度:{{item.counselorAdvice}}</label> -->
+      </view> 
+      </navigator>
+    </view>
+  </van-collapse-item>
+  <van-collapse-item title="已审批假条" name="2">
+    <view wx:for="{{leaveArray1}}" wx:key="_id">
+      <navigator url="../counselorDetail/counselorDetail?id={{item._id}}">
+      <view class="list">
+        <label style="font-size:35rpx">申请人：{{item.name}}</label>
+        <label style="font-size:25rpx">开始时间:{{item.leaveTime}}</label>
+        <label style="font-size:25rpx">结束时间:{{item.backTime}}</label>
+        <label>事由:{{item.reason}}</label>
+        <label>审核进度:{{item.counselorAdvice}}</label>
+      </view> 
+      </navigator>
+    </view>
+  </van-collapse-item>
+  </van-collapse>
+</view>

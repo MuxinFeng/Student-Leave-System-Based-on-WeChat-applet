@@ -1,0 +1,112 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wxc700eab3319e0e27",
+	"projectname": "officalLeaveSystem",
+	"libVersion": "2.11.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addStudent/addStudent",
+					"pathName": "pages/addStudent/addStudent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/leave/leave",
+					"pathName": "pages/leave/leave",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/leaveList/leaveList",
+					"pathName": "pages/leaveList/leaveList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/leaveDetail/leaveDetail",
+					"pathName": "pages/leaveDetail/leaveDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/loginChoose/loginChoose",
+					"pathName": "pages/loginChoose/loginChoose",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/headTeacherLogin/headTeacherLogin",
+					"pathName": "pages/headTeacherLogin/headTeacherLogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/changeSecret/changeSecret",
+					"pathName": "pages/changeSecret/changeSecret",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

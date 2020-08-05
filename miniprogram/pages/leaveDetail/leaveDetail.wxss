@@ -1,0 +1,15 @@
+
+.text{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  height:10%;
+  line-height:60rpx;
+}
+.button1{
+  margin-top: 20rpx;
+  width:70%;
+  line-height:center;
+  border-radius: 20px 20px 20px 20px;
+}

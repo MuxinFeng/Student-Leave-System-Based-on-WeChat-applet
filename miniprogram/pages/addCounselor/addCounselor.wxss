@@ -1,0 +1,9 @@
+/* pages/addStudent/addStudent.wxss */
+button{
+  margin-top: 50rpx;
+  width:70%;
+  height:100rpx; 
+  line-height:100rpx;
+  background-color: rgba(0, 132, 255, 0.863);
+  color: rgb(247, 238, 238);
+}

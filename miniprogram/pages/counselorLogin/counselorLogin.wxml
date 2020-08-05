@@ -1,0 +1,18 @@
+<view class="wrap">
+  <image class='background' src="../../images/login/loginBackground.png" mode="aspectFill"></image>
+  <text class="title">辅导员登陆</text>
+  <view class="login">
+    <form bindsubmit="clickToLogin">
+      <view class="username">
+        <label>账号</label>
+        <input type="text" placeholder="请输入账号"  name="username"/>
+      </view>
+      <view class="pwd">
+        <label>密码</label>
+        <input password placeholder="请输入密码"  name="pwd"/>
+      </view> 
+      <button class="confirm" form-type="submit">确定登录</button>
+      <button class="registered" bindtap="registered">用户注册</button>
+    </form>
+  </view>
+</view>

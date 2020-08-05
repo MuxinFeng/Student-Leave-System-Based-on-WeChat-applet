@@ -1,0 +1,22 @@
+<view>
+  <text class="text">假条详情</text>
+  <form bindsubmit="onsubmitclass">
+    <van-cell-group>
+      <van-field value="{{classLeave.className}}" label="班级"  />
+      <van-field value="{{classLeave.studentId}}" label="学号"  />
+      <van-field value="{{classLeave.name}}" label="姓名"  />
+      <van-field value="{{classLeave.guardian}}" label="联系人"  />
+      <van-field value="{{classLeave.guardianPhone}}" label="联系人电话" />
+      <van-field value="{{classLeave.reason}}" label="请假事由"  />
+       <!-- <van-field value="{{classLeave.dorm}}" label="宿舍地址" disabled border="{{ false }}" style="display:  {{ classLeave.dorm == 'null' ? 'none' :  'block' }}"/> -->
+       <van-field value="{{classLeave.dorm}}" label="宿舍地址" disabled border="{{ false }}" style="display:  {{ classLeave.dorm == null ? 'none' :  'block' }}"/>
+      <van-field value="{{classLeave.leaveTime}}" label="离校时间"  />
+      <van-field value="{{classLeave.backTime}}" label="返校时间" />
+      <van-field value="{{classLeave.destination}}" label="去向"  />
+      <van-field value="{{classLeave.headTeacherAdvice}}" label="班主任意见" disabled border="{{ false }}"/>
+      <van-field value="{{classLeave.counselorAdvice}}" label="辅导员意见" disabled border="{{ false }}"/>
+    </van-cell-group>
+    <button class="button1" type="primary" plain="true" form-type="submit" disabled="{{classLeave.progressrate=='待审核'?false:true}}"> 修改假条 </button>
+    <button class="button1" type="primary" plain="true" bindtap="deleteInfo" disabled="{{classLeave.progressrate=='待审核'?false:true}}"> 删除假条 </button>
+  </form>
+</view>
